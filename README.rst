@@ -1,27 +1,20 @@
-======================
-django-pure-pagination
-======================
-
-.. image:: https://travis-ci.org/jamespacileo/django-pure-pagination.svg?branch=master
-    :target: https://travis-ci.org/jamespacileo/django-pure-pagination
-
 Description
 ======================
 
 :Author:
-    James Pacileo `@ignighted <http://twitter.com/ignighted>`_
+    Yuki Takino `@moon_in_nagano <http://twitter.com/moon_in_nagano>`_
 
 :Version:
-    0.3.0
+    0.4.0
 
 :Description:
     django-pure-pagination provides advanced pagination features and is fully compatible with existing code based on Django's core pagination module. (aka no need to rewrite code!)
 
 :Requirements:
-    Django 1.7+
+    Django 1.8+
 
 :Contributors:
-    `juandecarrion (Juande Carrion) <https://github.com/juandecarrion>`_, `twidi (Stéphane Angel) <https://github.com/twidi>`_, `bebraw (Juho Vepsäläinen) <https://github.com/bebraw>`_, `lampslave () <https://github.com/lampslave>`_, `GeyseR (Sergey Fursov) <https://github.com/GeyseR>`_, `zeus (Pavel Zhukov) <https://github.com/zeus>`_
+    `juandecarrion (Juande Carrion) <https://github.com/juandecarrion>`_, `twidi (Stéphane Angel) <https://github.com/twidi>`_, `bebraw (Juho Vepsäläinen) <https://github.com/bebraw>`_, `lampslave (Maksim Iakovlev) <https://github.com/lampslave>`_, `GeyseR (Sergey Fursov) <https://github.com/GeyseR>`_, `zeus (Pavel Zhukov) <https://github.com/zeus>`_
 
 
 Introduction
@@ -121,7 +114,7 @@ view file: **views.py**
 
         # Provide Paginator with the request object for complete querystring generation
 
-        p = Paginator(objects, request=request)
+        p = Paginator(objects, request=request, per_page=2)
 
         people = p.page(page)
 
