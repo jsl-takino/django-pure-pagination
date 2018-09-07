@@ -58,7 +58,7 @@ or clone and install from repository:
 
 ::
 
-    git clone git@github.com:jamespacileo/django-pure-pagination.git
+    git clone git@github.com:jsl-takino/django-pure-pagination.git
     cd django-pure-pagination
     python setup.py install
 
